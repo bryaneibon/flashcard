@@ -1,0 +1,38 @@
+/*
+style.css
+---------
+ 
+Par Bryan D.
+
+*/
+
+.quiz-area{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  background-image: url("../images/world.png");
+  background-size: cover;
+  height: 99vh;
+  width: 99vw;
+}
+
+.quiz-title{
+  text-align: center;
+}
+
+.flashcards-board{
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+}
+
+.card{
+  display: inline-block;
+  margin-right:50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #F4E4D7;
+  color: #FF911F;
+  border-radius: 10px;
+}

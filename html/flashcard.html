@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <!--
-Step 1: Setting up
-Description:
-First, we have to come up with the topic for your memory board.
-When selecting a theme to work with, we need to remember that our questions and answers shouldn’t be too long.
-
-Flashcards can be used as an educational tool for a wide variety of tasks,
-from learning foreign words and scientific terms to memorizing the birthday dates of your new friends.
-
-We chose to make geography themed flashcards that can help you memorize the countries' capitals.
+Step 2: Design !
+Objectives:
+1. Make a set of square flash cards.
+2. Set the background for the cards and the whole page using the CSS property background-image/background-color.
+3. Position the cards using the CSS property grid/flex so they make a 3x3 table.
+4. Set the fonts for the text.
 -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Flashcards</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Flashcards</title>
+</head>
     <body>
-        <h1>
-            What is the capital of...
-        </h1>
-        <div>
-            <p>Mexico</p>
-        </div>
-        <div>
-            <p>Papua New Guinea</p>
-        </div>
-        <div>
-            <p>Iceland</p>
-        </div>
-        <div>
-            <p>South Korea</p>
-        </div>
-        <div>
-            <p>Sweden</p>
-        </div>
-        <div>
-            <p>Georgia</p>
-        </div>
-        <div>
-            <p>Honduras</p>
-        </div>
-        <div>
-            <p>Tunisia</p>
-        </div>
-        <div>
-            <p>Austria</p>
+        <div class="quiz-area">
+            <h1 class="quiz-title">What is the capital of...</h1>
+            <div class="flashcards-board">
+                <div class="card">Mexico</div>
+                <div class="card">Papua New Guinea</div>
+                <div class="card">Iceland</div>
+                <div class="card">South Korea</div>
+                <div class="card">Sweden</div>
+                <div class="card">Georgia</div>
+                <div class="card">Honduras</div>
+                <div class="card">Tunisia</div>
+                <div class="card">Austria</div>
+            </div>
         </div>
     </body>
 </html>

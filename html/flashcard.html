@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!--
-Step 2: Design !
+Step 3: On the flip side !
 Objectives:
-1. Make a set of square flash cards.
-2. Set the background for the cards and the whole page using the CSS property background-image/background-color.
-3. Position the cards using the CSS property grid/flex so they make a 3x3 table.
-4. Set the fonts for the text.
+The advantage of flashcards is that they contain answers on the back side so that you can check yourself.
+For each card, let's create the flip side with the answer (in our case, the capital),
+which will appear when the user hovers the cursor over the card.
+---
+Make the answer on the back side appear when the user hovers over the card.
+
 -->
 <html lang="en">
 
@@ -20,15 +22,52 @@ Objectives:
         <div class="quiz-area">
             <h1 class="quiz-title">What is the capital of...</h1>
             <div class="flashcards-board">
-                <div class="card">Mexico</div>
-                <div class="card">Papua New Guinea</div>
-                <div class="card">Iceland</div>
-                <div class="card">South Korea</div>
-                <div class="card">Sweden</div>
-                <div class="card">Georgia</div>
-                <div class="card">Honduras</div>
-                <div class="card">Tunisia</div>
-                <div class="card">Austria</div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Mexico</p></div>
+                    <div class="smooth_flip card_content_back"><p>Mexico City</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Papua New Guinea</p></div>
+                    <div class="smooth_flip card_content_back"><p>Port Moresby</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Iceland</p></div>
+                    <div class="smooth_flip card_content_back"><p>Reykjavik</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>South Korea</p></div>
+                    <div class="smooth_flip card_content_back"><p>Seoul</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Sweden</p></div>
+                    <div class="smooth_flip card_content_back"><p>Stockholm</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Georgia</p></div>
+                    <div class="smooth_flip card_content_back"><p>Atlanta</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Honduras</p></div>
+                    <div class="smooth_flip card_content_back"><p>Tegucigalpa</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Tunisia</p></div>
+                    <div class="smooth_flip card_content_back"><p>Tunis</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="smooth_flip card_content_front"><p>Austria</p></div>
+                    <div class="smooth_flip card_content_back"><p>Viena</p></div>
+                </div>
+
             </div>
         </div>
     </body>

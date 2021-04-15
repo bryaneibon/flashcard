@@ -32,7 +32,40 @@ Par Bryan D.
   margin-right:50px;
   margin-bottom: 50px;
   text-align: center;
-  background: #F4E4D7;
-  color: #FF911F;
-  border-radius: 10px;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card_content_front,
+.card_content_back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.card_content_front{
+    z-index: 2;
+    background: #F4E4D7;
+    color: #FF911F;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card_content_back{
+    z-index: 1;
+    background: #FF911F;
+    color: #F4E4D7;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.smooth_flip {
+    position: absolute;
+    backface-visibility: hidden;
 }

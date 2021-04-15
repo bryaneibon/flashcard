@@ -10,7 +10,7 @@ Par Bryan D.
   display: flex;
   flex-direction: column;
   font-family: 'Oswald', sans-serif;
-  background-image: url("../images/world.png");
+  background-image: url("../images/world.gif");
   background-size: cover;
   height: 99vh;
   width: 99vw;
@@ -18,12 +18,13 @@ Par Bryan D.
 
 .quiz-title{
   text-align: center;
+  color: cornsilk;
 }
 
 .flashcards-board{
   display: grid;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
   justify-content: center;
 }
 

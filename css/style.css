@@ -1,19 +1,22 @@
 /*
 style.css
 ---------
- 
+
 Par Bryan D.
 
 */
 
+body {
+  margin: 0;
+}
+
 .quiz-area{
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   font-family: 'Oswald', sans-serif;
   background-image: url("../images/world.gif");
   background-size: cover;
-  height: 99vh;
-  width: 99vw;
 }
 
 .quiz-title{
@@ -43,7 +46,6 @@ Par Bryan D.
 .card_content_back{
     height: 100%;
     width: 100%;
-    position: absolute;
 }
 
 .card_content_front{
@@ -51,7 +53,6 @@ Par Bryan D.
     background: #F4E4D7;
     color: #FF911F;
     border-radius: 10px;
-    backface-visibility: hidden;
 }
 
 .card_content_back{
